@@ -1,6 +1,6 @@
 import {createReducer} from "@reduxjs/toolkit";
 const initialState = {
-    isAuthenticated:false
+   
 }
 
  const loginReducer = createReducer(initialState,{
@@ -15,9 +15,9 @@ const initialState = {
     },
     LoginFail:(state,action)=>{
         state.loading = false
-        state.error = action.payload
+        state.usererror = action.payload
         state.isAuthenticated = false
-    },
+    }
    
 
 })
