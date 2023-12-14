@@ -25,7 +25,6 @@ import { Button, colors } from "@mui/material";
 const HomePage = () =>{
 
     const user =JSON.parse(localStorage.getItem("userInfo"))
-    console.log(user[0].role,user[0].name)
 
     return(
         <div className="main">
