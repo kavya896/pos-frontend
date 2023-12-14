@@ -32,7 +32,7 @@ const LoginPage = () =>{
     
     return(
         <div className="loginPage">
-            <img src="https://image.similarpng.com/very-thumbnail/2020/06/Restaurant-logo-with-chef-drawing-template-on-transparent-background-PNG.png" alt="image"></img>
+            <img src="https://ioready.io/info.ioready.io/images/64eddd725a4dd556617841db3fb97ca1.png" alt="image"></img>
             <Typography variant="h3" style={{textAlign:"center"}}>
                            LOGIN
             </Typography>
@@ -40,7 +40,7 @@ const LoginPage = () =>{
                     
                     <input type="email" placeholder="email" required value={email} onChange={(e)=>setEmail(e.target.value)} />
                     <input type="password" placeholder="password" required value={password} onChange={(e)=>setPassword(e.target.value)}  />
-                   <Button type="submit" style={{backgroundColor:"red"}}>Login</Button>
+                   <Button type="submit" style={{backgroundColor: "rgb(115, 79, 223)"}}>Login</Button>
                    <Button style={{backgroundColor:"black"}}>Forgot Password</Button>
                 </form>
             
