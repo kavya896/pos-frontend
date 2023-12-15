@@ -5,7 +5,7 @@
     grid-template-columns: auto 1fr;
     height: 705px;
     box-sizing: border-box;
-    overflow-y: hidden;
+    
 }
 .sidebar{
     background-color:white;
@@ -96,3 +96,48 @@
     margin-left: auto;
     border-style: ridge;
 }
+
+/* when hover on side bar */
+
+.sidebar:hover  .hoveronsidebar{
+   display: block;
+}
+.hoveronsidebar{
+    display: none;
+}
+
+.sidebarcontent img{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+.sidebarcontent{
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 280px;
+    margin-left: 180px;
+    height: 697px;
+    overflow-y: auto;
+   margin-top: -480px;
+   z-index: 1;
+   overflow-y: auto;
+}
+
+.iconstyling{
+    margin: -15px 37px;
+    color:rgb(123, 130, 130);
+}
+.sidebarcontent a{
+    text-decoration: none;
+    color:rgb(123, 130, 130);
+}
+
+
+
+
+
+/* end of hover functionality */

@@ -16,9 +16,10 @@ import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined
 import FreeBreakfastOutlinedIcon from '@mui/icons-material/FreeBreakfastOutlined';
 import PrintOutlinedIcon from '@mui/icons-material/PrintOutlined';
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
+import AdjustIcon from '@mui/icons-material/Adjust';
 import "./HomePage.css"
 import {useSelector} from "react-redux"
-import { Button, colors } from "@mui/material";
+import { Button, Link, Typography, colors } from "@mui/material";
 
 
 
@@ -45,8 +46,61 @@ const HomePage = () =>{
                 <div><AttachMoneyOutlinedIcon/></div>
                 <div><AttachMoneyOutlinedIcon/></div>
                 <div><AttachMoneyOutlinedIcon/></div>
+                 {/* when hover on side bar */}
+
+            <div className="hoveronsidebar" >
+               <div className="sidebarcontent">
+                    <img src="https://ioready.io/info.ioready.io/images/64eddd725a4dd556617841db3fb97ca1.png" alt="image"></img>
+                    
+            <div className="alignDetials iconstyling"  >
+                <p><HomeOutlinedIcon/></p>
+                <p>Home</p>
+            </div>
+            <div className="alignDetials iconstyling"  >
+                <p> <SettingsOutlinedIcon/></p>
+                <p>Settings  </p>
+            </div>
+            <div className="alignDetials iconstyling "  >
+                <p> <DescriptionOutlinedIcon/></p>
+                <p> Item</p>
+                
+                
+            </div>
+            <div className="alignDetials iconstyling"  >
+                <div id="index" >
+                <Link to="/unit">
+                    
+                    <p>Add Ingredient unit</p>
+                </Link>
+                <Link to="/home">
+                    <p>List Ingredient unit</p>
+                </Link>
+                <Link to="/home">
+                    <p>Add Ingredient Category</p>
+                </Link>
+                <Link to="/home">
+                    <p>List Ingredient Category</p>
+                </Link>
+                <Link to="/home">
+                    <p>Add Ingredient</p>
+                </Link>
+                <Link to="/home">
+                    <p>List Ingredient</p>
+                </Link>
+                </div>
+               
+            
+            </div>
+            <div className="alignDetials iconstyling"  >
+                <p><PrintOutlinedIcon/></p>
+                <p>Outlet Settings</p>
+            </div>
+            
+            </div>
 
             </div>
+            </div>
+           
             <div className="mainbar">
             <div className="loginDetails">
             <div className="alignDetials"  style={{color:"rgb(123, 130, 130)"}}>
