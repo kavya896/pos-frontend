@@ -37,6 +37,7 @@
     margin: -21px 7px;
     
     border-radius: 12px;
+    position: relative;
 }
 .screens Button{
     
@@ -52,6 +53,7 @@
     border-radius: 20px;
     height: 400px;
     display: flex;
+    position: relative;
 }
 .details{
    margin: 5px; 
@@ -136,8 +138,11 @@
     color:rgb(123, 130, 130);
 }
 
-
-
+/* for href */
+.index p:hover{
+    background-color:rgb(218, 218, 206) ;
+    padding: 0px 2px;
+}
 
 
 /* end of hover functionality */

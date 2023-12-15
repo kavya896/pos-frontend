@@ -66,12 +66,12 @@ const HomePage = () =>{
                 
                 
             </div>
-            <div className="alignDetials iconstyling"  >
-                <div id="index" >
-                <Link to="/unit">
+            <div className="alignDetials iconstyling index"  >
+                <div  >
+                <a href="/unit">
                     
                     <p>Add Ingredient unit</p>
-                </Link>
+                </a>
                 <Link to="/home">
                     <p>List Ingredient unit</p>
                 </Link>
@@ -134,13 +134,14 @@ const HomePage = () =>{
          
             </div>
             <div className="screens">
-            <Button>Dashboard</Button>
+               <Button>Dashboard</Button>
+           
             <Button>POS Screen</Button>
             <Button>Waiter Screen</Button>
             <Button>Kitchen Panel</Button>
             </div>
             </div>
-            <div className="centerbar">
+            <div className="centerbar" id="center">
             <img src="https://ioready.io/info.ioready.io/images/chef.png" alt="image"></img>
             <div className="details">
                 <p className="name" >Tikka Lounge</p>

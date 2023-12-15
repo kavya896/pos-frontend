@@ -23,6 +23,7 @@ const LoginPage = () =>{
     useEffect(()=>{
        if(user){
         navigate("/home")
+       
        }else{
         if(usererror){
             alert("credentials doesn't match")

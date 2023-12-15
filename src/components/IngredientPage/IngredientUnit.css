@@ -1,0 +1,49 @@
+.unitpage{
+    margin-top: -600px;
+    background-color:rgb(218, 218, 206);
+    margin-left: 90px;
+    height: 555px;
+    position: absolute;
+    width: 93%;
+    overflow: hidden;
+}
+.addunit{
+    margin-top: 20px;
+    
+    
+}
+.description{
+    background-color: white;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 17px;
+   display: flex;
+}
+.unitname {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 425px;
+}
+.unitdescription{
+    margin-top: 20px;
+    margin-left: 20px;
+
+
+}
+label{
+    padding: 19px;
+    font-size: 18px;
+    margin-left: -18px;
+}
+input{
+    padding: 8px;
+    font-size: 20px;
+    width:228%
+}
+.buttonstyling{
+    margin-left: -70%;
+    margin-top: 113px;
+}
+.btn{
+    background-color:rgb(115, 79, 223) ;
+}
