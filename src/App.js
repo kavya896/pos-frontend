@@ -14,9 +14,10 @@ function App() {
 
   return (
     <Router>
-     {userInfo && <HomePage/>}
+       {userInfo && <HomePage/>}
       <Routes>
-        <Route path="/" element={<LoginPage/>} />
+     
+        <Route path="/" element={userInfo?"":<LoginPage/>} />
         <Route path="/home" element={<HomePage/>} ></Route>
         <Route path="/contact" element={<ContactPage/>}></Route>
         <Route path='/unit' element={<UnitPage/>}></Route>

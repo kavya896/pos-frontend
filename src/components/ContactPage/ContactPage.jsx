@@ -8,7 +8,7 @@ import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 
 const ContactPage = ()=>{
     return(
-        <div>
+        <div className="unitpage">
             <div className="centerbar">
            <div className="screens">
             <Button>Dashboard</Button>

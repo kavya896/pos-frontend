@@ -22,7 +22,9 @@ const LoginPage = () =>{
     
     useEffect(()=>{
        if(user){
-        navigate("/home")
+        alert("logged-in successfully")
+        window.location.reload()
+        
        
        }else{
         if(usererror){
