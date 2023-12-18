@@ -22,3 +22,21 @@ export const login = (email,password) =>async(dispatch)=>{
         console.log("error",err)
     }
 }
+
+
+export const ingredientsList = () => async(dispatch)=>{
+    try{
+        const config={
+            headers:{
+                "Content-type":"application/json"
+            }
+        }
+        const {data} = await axios.get("/api/listunit")
+        console.log("list from actions",data)
+        dispatch({type:"IngredientSuccess",payload:data})
+
+    }catch(err){
+        dispatch({type:"IngredientFail",payload:err})
+        console.log(err)
+    }
+}

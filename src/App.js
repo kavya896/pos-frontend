@@ -2,8 +2,9 @@ import './App.css';
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 import LoginPage from './components/loginpage/loginPage';
 import HomePage from './components/HomePage/HomePage';
-import ContactPage from './components/ContactPage/ContactPage';
+import IngredientCategory from './components/IngreCategory/IngreCategory';
 import UnitPage from './components/IngredientPage/IngredientUnit';
+import ListUnit from './components/ListIngredient/ListIngredient';
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
      
         <Route path="/" element={userInfo?"":<LoginPage/>} />
         <Route path="/home" element={<HomePage/>} ></Route>
-        <Route path="/contact" element={<ContactPage/>}></Route>
+        <Route path="/category" element={<IngredientCategory/>}></Route>
         <Route path='/unit' element={<UnitPage/>}></Route>
+        <Route path='/listunit' element={<ListUnit/>} ></Route>
       </Routes>
     </Router>
   );

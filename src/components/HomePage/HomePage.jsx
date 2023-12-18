@@ -72,12 +72,12 @@ const HomePage = () =>{
                     
                     <p>Add Ingredient unit</p>
                 </a>
-                <Link to="/home">
+                <a href="/listunit">
                     <p>List Ingredient unit</p>
-                </Link>
-                <Link to="/home">
+                </a>
+                <a href="/category">
                     <p>Add Ingredient Category</p>
-                </Link>
+                </a>
                 <Link to="/home">
                     <p>List Ingredient Category</p>
                 </Link>

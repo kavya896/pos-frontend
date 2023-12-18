@@ -1,0 +1,49 @@
+.unitpage{
+    margin-top: -600px;
+    background-color:rgb(219, 219, 217);
+    margin-left: 90px;
+    height: 555px;
+    position: absolute;
+    width: 93%;
+    overflow: hidden;
+}
+.addunit{
+    margin-top: 20px;
+}
+.backgrd{
+    background-color: white;
+}
+.backdrop{
+    
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.entry{
+    margin-left: 23px;
+    margin-top: 20px;
+}
+.entries{
+    padding:8px;
+}
+.search{
+    margin: 15px 35px;
+    width: 11%;
+}
+.export{
+    margin: 20px;
+    margin-left: 64%;
+}
+.input{
+    margin: -1px 0px;
+    padding: 8px;
+    font-size: 15px;
+    width: 145%;
+}
+.btn{
+    color: rgb(219, 219, 217);
+}
+
+.headings{
+    display: flex;
+}
