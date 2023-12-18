@@ -26,6 +26,7 @@ import { Button, Link, Typography, colors } from "@mui/material";
 const HomePage = () =>{
 
     const user =JSON.parse(localStorage.getItem("userInfo"))
+   
 
     return(
         <div className="main">
@@ -103,9 +104,15 @@ const HomePage = () =>{
            
             <div className="mainbar">
             <div className="loginDetails">
-            <div className="alignDetials"  style={{color:"rgb(123, 130, 130)"}}>
-                <p> <FreeBreakfastOutlinedIcon/></p>
-                <p>POS</p>
+            <div className="alignDetials" style={{color:"rgb(123, 130, 130)"}} >
+                <a href="/pos" className="other">
+                <FreeBreakfastOutlinedIcon/>
+                 
+                </a>
+                <a href="/pos" className="other">
+               POS
+                 
+                </a>
             </div>
             <div className="alignDetials" style={{color:"rgb(123, 130, 130)"}} >
                 <p> <LocalShippingOutlinedIcon/></p>

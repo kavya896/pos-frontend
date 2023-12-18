@@ -145,4 +145,13 @@
 }
 
 
+
 /* end of hover functionality */
+
+.mainbar a {
+    margin-top: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    color:rgb(123, 130, 130);
+}
+
