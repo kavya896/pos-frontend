@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const login = (email,password) =>async(dispatch)=>{
     try{
-        console.log("entered")
+       
         const config = {
             headers:{
                 "Content-type":"application/json"
@@ -37,6 +37,25 @@ export const ingredientsList = () => async(dispatch)=>{
 
     }catch(err){
         dispatch({type:"IngredientFail",payload:err})
+        console.log(err)
+    }
+}
+
+export const loginUsingPin = (pin) =>async(dispatch) =>{
+    try{
+
+        const config = {
+            headers:{
+                "Content-type":"application/json"
+            }
+        }
+        const {data} = await axios.post("/api",{pin},config)
+        if(data){
+            dispatch({type:"LoginSuccess",payload:data})
+            localStorage.setItem("userInfo",JSON.stringify(data))
+        }
+          
+    }catch(err){
         console.log(err)
     }
 }

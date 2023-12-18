@@ -10,7 +10,7 @@ const initialState = {
     },
     IngredientSuccess:(state,action)=>{
         state.loading = false
-        state.list= action.payload
+        state.lists= action.payload
         state.isAuthenticated = true
     },
     IngredientFail:(state,action)=>{

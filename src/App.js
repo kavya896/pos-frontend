@@ -5,6 +5,7 @@ import HomePage from './components/HomePage/HomePage';
 import IngredientCategory from './components/IngreCategory/IngreCategory';
 import UnitPage from './components/IngredientPage/IngredientUnit';
 import ListUnit from './components/ListIngredient/ListIngredient';
+import PinPage from './components/loginpage/pin';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Routes>
      
         <Route path="/" element={userInfo?"":<LoginPage/>} />
+        <Route path='/pin' element={userInfo?"":<PinPage/>} ></Route>
         <Route path="/home" element={<HomePage/>} ></Route>
         <Route path="/category" element={<IngredientCategory/>}></Route>
         <Route path='/unit' element={<UnitPage/>}></Route>

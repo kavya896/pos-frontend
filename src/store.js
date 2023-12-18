@@ -5,7 +5,7 @@ import ingredientReducer from "./reducer/ingredient";
 const store = configureStore({
     reducer:{
         user : loginReducer,
-        list: ingredientReducer
+        lists: ingredientReducer
     }
 });
 

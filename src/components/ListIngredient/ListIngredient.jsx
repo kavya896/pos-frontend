@@ -13,8 +13,8 @@ const ListUnit = () => {
         dispatch(ingredientsList())
     }, [dispatch])
 
-    const { list } = useSelector((state) => state.list)
-
+    const { lists } = useSelector((state) => state.lists)
+    console.log(lists, "dsaadc")
 
     return (
         <div className="unitpage">
@@ -37,23 +37,37 @@ const ListUnit = () => {
                         </div>
                         <div className="export">
                             
-                        <Button style={{backgroundColor:"rgb(219, 219, 217)",color:"rgb(196, 196, 173)"}}><IosShareIcon/>Export<ArrowDropDownIcon/></Button>
+                            <Button style={{backgroundColor:"rgb(219, 219, 217)",color:"rgb(196, 196, 173)"}}><IosShareIcon/>Export<ArrowDropDownIcon/></Button>
+                            
+                            </div>
                         
-                        </div>
                         
                     
                 </div>
                 <hr></hr>
                 <div className="headings">
-                    
-                   <div className="sn">
-                    SN
-                   </div>
+                <div className="sn">SN</div>
                    <div className="units">UNIT NAME</div>
                    <div className="des">DESCRIPTION</div>
                    <div className="action">ACTIONS </div>
                   
-                </div>
+                   </div>
+                   <hr></hr>
+                   <div>
+                    {lists && lists.map((list)=>{
+                        return(
+                            <div>
+                            <div key={list._id}>
+                                <div>sn</div>
+                                <div>{list.name}</div>
+                                <div>{list.description}</div>
+                                <div>actions</div>
+                            </div>
+                            <hr></hr>
+                            </div>
+                        )
+                    })}
+                   </div>
                 </div>
             </div>
         </div>
